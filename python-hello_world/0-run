@@ -1,2 +1,2 @@
-#!/usr/bin/python3
-print("Welcome to the course in python")
+#!/bin/bash
+python3 $PYFILE
