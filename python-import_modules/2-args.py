@@ -10,4 +10,4 @@ if __name__ == "__main__":
     else:
         print(f'{lenght} arguments:')
         for i in range(1, len(argv)):
-            print(f'{lenght}: {argv[i]}')
+            print(f'{i}: {argv[i]}')
