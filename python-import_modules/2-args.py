@@ -2,11 +2,12 @@
 from sys import argv
 
 if __name__ == "__main__":
-    if len(argv) == 1:
+    lenght = len(argv) - 1
+    if lenght == 1:
         print('1 argument:\n1: {}'.format(argv[0]))
-    elif len(argv) == 1:
+    elif lenght == 0:
         print('0 arguments.')
     else:
-        print(f'{len(argv)} arguments:')
+        print(f'{lenght} arguments:')
         for i in range(1, len(argv)):
-            print(f'{len(argv)}: {argv[len(argv)-1]}')
+            print(f'{lenght}: {argv[i]}')
