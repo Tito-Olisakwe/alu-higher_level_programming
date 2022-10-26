@@ -1,4 +1,2 @@
 #!/bin/bash
-export PYFILE = main.py
-echo "Compiling $PYFILE ..."
-python3 - c $PYFILE
+python3 - m compileall - b "$PYFILE"
