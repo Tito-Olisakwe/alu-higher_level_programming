@@ -14,71 +14,32 @@ class TestMaxInteger(unittest.TestCase):
         Function documentation
     """
 
-    def test_ordered_list(self):
+    def test_simple_case(self):
         """
-            Test an ordered list of integers.
+            Function documentation
         """
-        ordered = [1, 2, 3, 4]
-        self.assertEqual(max_integer(ordered), 4)
+        self.assertEqual(max_integer([1, 2, 3]), 3)
 
-    def test_unordered_list(self):
+    def test_negative_case(self):
         """
-            Test an unordered list of integers.
+            Function documentation
         """
-        unordered = [1, 2, 4, 3]
-        self.assertEqual(max_integer(unordered), 4)
+        self.assertEqual(max_integer([-1, -2, -3]), -1)
 
-    def test_max_at_begginning(self):
+    def test_empty_case(self):
         """
-                Test a list with a beginning max value.
+            Function documentation
         """
-        max_at_beginning = [4, 3, 2, 1]
-        self.assertEqual(max_integer(max_at_beginning), 4)
+        self.assertEqual(max_integer([]), None)
 
-    def test_empty_list(self):
+    def test_max_middle_case(self):
         """
-                Test an empty list.
+            Function documentation
         """
-        empty = []
-        self.assertEqual(max_integer(empty), None)
+        self.assertEqual(max_integer([1, 2, 5, 3, 4]), 5)
 
-    def test_one_element_list(self):
+    def test_one_element_case(self):
         """
-                Test a list with a single element.
+            Function documentation
         """
-        one_element = [7]
-        self.assertEqual(max_integer(one_element), 7)
-
-    def test_floats(self):
-        """
-                Test a list of floats.
-        """
-        floats = [1.53, 6.33, -9.123, 15.2, 6.0]
-        self.assertEqual(max_integer(floats), 15.2)
-
-    def test_ints_and_floats(self):
-        """
-                Test a list of ints and floats.
-        """
-        ints_and_floats = [1.53, 15.5, -9, 15, 6]
-        self.assertEqual(max_integer(ints_and_floats), 15.5)
-
-    def test_string(self):
-        """
-                Test a string.
-        """
-        string = "Walter"
-        self.assertEqual(max_integer(string), 't')
-
-    def test_list_of_strings(self):
-        """
-                Test a list of strings.
-        """
-        strings = ["Walter", "is", "my", "name"]
-        self.assertEqual(max_integer(strings), "name")
-
-    def test_empty_string(self):
-        """
-                Test an empty string.
-        """
-        self.assertEqual(max_integer(""), None)
+        self.assertEqual(max_integer([5]), 5)
