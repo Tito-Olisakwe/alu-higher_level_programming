@@ -7,7 +7,11 @@ My name is Bill Gates
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("Brian", 1)
+>>> say_my_name("Bill", 1)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name("Bill", ["Gates", "Elon", "Musk"])
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
