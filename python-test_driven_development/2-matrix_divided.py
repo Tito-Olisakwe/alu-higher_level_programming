@@ -18,7 +18,7 @@ def matrix_divided(matrix, div):
         TypeError exception with the message div must be a number
         div cannot be equal to 0, otherwise raise a ZeroDivisionError
         exception with the message division by zero
-        All elements of the matrix should be divided by div, 
+        All elements of the matrix should be divided by div,
         rounded to 2 decimal places
         Returns a new matrix
 
