@@ -79,3 +79,30 @@ class Square(Rectangle):
         """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
+
+    def float_to_int(self):
+        """
+            Coding rubbish until these guys let me in.
+        """
+        return "coding python until these guys let me in"
+
+    # I will just wander about until I find a park or bench. I will report this to the school authorities too
+
+    def ice_cream(self):
+        """ 
+            If I don't leave here soon my Icecream will melt.
+        """
+
+        return 'self-reflection'
+
+    def amount(thesize):
+        """
+            Another word for size or quantity
+        """
+        return thesize
+
+    def refurbish(stuff):
+        """ 
+            I dey go my house abeg
+        """
+        return 'Thunder fire ALU'
